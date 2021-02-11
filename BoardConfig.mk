@@ -96,6 +96,9 @@ WITH_PERMISSIVE := true
 TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
 TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
 
+# Symbols
+TARGET_LD_SHIM_LIBS := /system/lib/libimsma_socketwrapper.so|libshim_imsma_socketwrapper.so
+
 # Treble
 BOARD_VNDK_VERSION  := current
 TARGET_COPY_OUT_VENDOR := vendor
